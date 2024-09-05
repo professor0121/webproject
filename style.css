@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position:center;
+   
+    overflow: hidden;
+}
+.navbar{
+    margin-top: 30px;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.logo{
+    padding-left: 30px;
+}
+
+.signup{
+   width: 130px;
+   height: 50px;
+   color: #fff;
+
+    font-size: 20px;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #fafbfc;
+    border-radius: 20px;
+    outline: none;
+    margin-left:68%;
+}
+.ourtour{
+    width: 130px;
+   height: 50px;
+   color: #fff;
+
+    font-size: 20px;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.containt h1{
+    font-size: 80px;
+    margin: 10px 0px 30px;
+    line-height: 80px;
+}
+.containt small{
+    font-size: 20px;
+}
+
+.containt{
+    color: #fafbfc;
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.sidebar{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#00545d,#000729);
+    position: absolute;
+    top:0;
+    right:0;
+}
+.social-link img, .share-link img{
+ width: 25px;
+ margin: 5px;
+ cursor: pointer;
+}
+
+.social-link{
+    width: 50px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.share-link{
+    width: 50px;
+    position: absolute;
+    text-align: center;
+    bottom: 30px;
+}
+
+.bubble img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+.bubble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -50px;
+    justify-content: space-around;
+}
+
+@keyframes bubble
+ {
+  0%{
+    transform: translateY(0);
+    opacity: 0;
+  }    
+  50%{
+    
+    opacity: 1;
+  }    
+  70%{
+
+    opacity: 1;
+  }    
+  100%{
+    transform: translateY(-80vh);
+    opacity: 1;
+  }    
+}
+
+.bubble img:nth-child(1){
+    animation-delay: 2s;
+    width: 40px;
+}
+.bubble img:nth-child(2){
+    animation-delay: 3s;
+    width: 30px;}
+.bubble img:nth-child(3){
+    animation-delay: 8s;
+    width: 35px;
+}
+.bubble img:nth-child(4){
+    animation-delay: 6s;
+}
+.bubble img:nth-child(5){
+    animation-delay: 2s;
+}
+.bubble img:nth-child(6){
+    width: 25px;
+    animation-delay: 7s;
+}
+.bubble img:nth-child(7){
+    width: 20px;
+    animation-delay: 1s;
+}
